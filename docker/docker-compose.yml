@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  rails:
+    build: ./rails
+    container_name: '${PROJECT}--rails'
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../src/rails:/opt/src
